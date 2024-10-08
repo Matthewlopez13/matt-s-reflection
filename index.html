@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Privacy Reflection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Data Privacy & Awareness Campaign</h1>
+            <p class="subtitle">My Reflection</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="reflection">
+                <h2>Reflection</h2>
+                <p> The Data Privacy and Awareness Campaign I attended was a good experience that changed how I think about my personal information in today’s digital world. Before attending, I thought I had a decent understanding of data privacy. However, the information shared during the event made me realize that there is so much more to learn.
+
+                    At the start of the campaign, I learned about how much data we create every day. Every time we use our phones, browse the internet, or interact on social media, we leave behind pieces of information about ourselves. This made me think about how easy it is to share personal details without even realizing it. For example, I often sign up for online services or use apps without reading the privacy policies. I realized that even if I adjust my privacy settings on social media, I might still be sharing my information in ways I don’t understand.
+                    
+                    One of the most surprising parts of the campaign was the explanation of what a “data footprint” is. This term refers to all the information we leave online that builds a picture of who we are. I learned that even simple actions, like clicking a link or liking a post, contribute to this footprint. This understanding made me reflect on my own online habits. I wondered how many of us really take the time to read the fine print before agreeing to terms and conditions when signing up for services. The thought that my data could be sold or shared without my consent is quite scary. It was a wake-up call for me to be more aware of my actions online.
+                    
+                    The campaign also introduced many useful tools and practices to protect our data. For example, we learned about the importance of using strong, unique passwords for different accounts. I had often used the same password for multiple sites, thinking it would be easier to remember. However, the campaign stressed that this practice puts us at greater risk. I also learned about two-factor authentication, which adds an extra layer of security to my accounts. After attending the campaign, I decided to take action by reviewing my online accounts, changing my passwords, and being careful about the information I share.
+                    
+                    Another significant message from the campaign was about the responsibility we have to protect not only our data but also to help others. I used to think that data privacy was a personal issue, something I needed to handle on my own. However, the campaign emphasized that it is a community issue as well. We should share what we learn about data privacy with friends and family so that everyone can be more informed. By educating others, we can help create a culture that values privacy and respects personal information.
+                    
+                    In summary, the Data Privacy and Awareness Campaign was much more than just a seminar; it was a crucial learning experience. It opened my eyes to how important it is to be careful about our personal information in a world where everything is connected. Now, I feel more aware of my online actions and more committed to protecting my data. I also feel inspired to talk to others about what I’ve learned, so we can all work together to make our online experiences safer. Data privacy is not just about keeping our information safe; it is also about understanding our rights and respecting the rights of others. I left the campaign feeling empowered and ready to take charge of my digital life.
+                    
+                    </p>
+                
+            </section>
+
+            <section class="interactive">
+                <h2>How Well Do You Understand Data Privacy?</h2>
+                <p>Rate your understanding of data privacy on a scale of 1 to 10:</p>
+                <input id="understanding_input" type="number" min="1" max="10" placeholder="1-10">
+                <button onclick="evaluateUnderstanding()">Submit</button>
+                <p id="understanding_output"></p>
+            </section>
+            <script>
+                function evaluateUnderstanding() {
+                    const value = document.getElementById("understanding_input").value;
+                    const output = document.getElementById("understanding_output");
+            
+                    if (value >= 8) {
+                        output.innerText = "Great! You have a strong understanding of data privacy.";
+                        output.style.color = "green";
+                    } else if (value >= 5) {
+                        output.innerText = "Good! You know some important aspects, but there's more to learn.";
+                        output.style.color = "orange";
+                    } else if (value >= 1) {
+                        output.innerText = "It seems you have some concerns about data privacy. Let's explore more!";
+                        output.style.color = "red";
+                    } else {
+                        output.innerText = "Please enter a valid number between 1 and 10.";
+                        output.style.color = "grey";
+                    }
+                }
+            </script>
+                        
+
+    <footer>
+        <div class="container">
+            <p>Matthew Lopez</p>
+        </div>
+    </footer>
+</body>
+</html>

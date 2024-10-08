@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(180, 4%, 5%);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(90deg, hsl(180, 5%, 4%), hsl(220, 6%, 10%)); /* Gradient header */
+    padding: 40px;
+    color: #d5cdcd;
+    text-align: center;
+    border-bottom: 5px solid hsl(220, 9%, 7%);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    color: hsl(210, 8%, 5%);
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: rgb(200, 195, 195);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #c8bbbb1a;
+}
+
+section.interactive {
+    background-color: hsl(0, 8%, 74%); /* Light blue background for interactivity */
+    border-left: 5px solid #36d1dc;
+}
+
+section.quiz {
+    background-color: #fdf7e3; /* Light yellow for quiz section */
+    border-left: 5px solid #ffcf00;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: calc(100% - 22px); /* Responsive width */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #5b86e5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #36d1dc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+section.interactive, section.quiz {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    font-size: 1.1em;
+    margin-top: 10px;
+    width: calc(100% - 22px); /* Make input fields responsive */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5b86e5;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #36d1dc;
+}
+
+p {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+#privacy_feedback, #quiz_feedback {
+    font-weight: bold;
+}
+
